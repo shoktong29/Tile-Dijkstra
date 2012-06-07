@@ -1,0 +1,343 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5B16417D1578B5940002D587 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B16417C1578B5940002D587 /* UIKit.framework */; };
+		5B16417F1578B5940002D587 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B16417E1578B5940002D587 /* Foundation.framework */; };
+		5B1641811578B5940002D587 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B1641801578B5940002D587 /* CoreGraphics.framework */; };
+		5B1641831578B5940002D587 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B1641821578B5940002D587 /* CoreData.framework */; };
+		5B1641891578B5940002D587 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5B1641871578B5940002D587 /* InfoPlist.strings */; };
+		5B16418B1578B5940002D587 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B16418A1578B5940002D587 /* main.m */; };
+		5B16418F1578B5940002D587 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B16418E1578B5940002D587 /* AppDelegate.m */; };
+		5B1641921578B5940002D587 /* TextParser.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5B1641901578B5940002D587 /* TextParser.xcdatamodeld */; };
+		5B1641991578B6980002D587 /* GraphData.txt in Resources */ = {isa = PBXBuildFile; fileRef = 5B1641981578B6980002D587 /* GraphData.txt */; };
+		5B86747B157F039B008F011A /* Node.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B867474157F039B008F011A /* Node.m */; };
+		5B86747D157F039B008F011A /* NodeManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B867477157F039B008F011A /* NodeManager.m */; };
+		5B86747E157F039B008F011A /* Edge.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B867479157F039B008F011A /* Edge.m */; };
+		5B867482157F0413008F011A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B867481157F0413008F011A /* ViewController.m */; };
+		5B867485157F0ACF008F011A /* EdgeManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B867484157F0ACE008F011A /* EdgeManager.m */; };
+		5B867499157F256C008F011A /* Dijktra.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B867497157F2473008F011A /* Dijktra.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		5B1641781578B5940002D587 /* Tile Dijkstra.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Tile Dijkstra.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5B16417C1578B5940002D587 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		5B16417E1578B5940002D587 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		5B1641801578B5940002D587 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		5B1641821578B5940002D587 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		5B1641861578B5940002D587 /* Tile Dijkstra-Info.plist */ = {isa = PBXFileReference; path = "Tile Dijkstra-Info.plist"; sourceTree = "<group>"; };
+		5B1641881578B5940002D587 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		5B16418A1578B5940002D587 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		5B16418C1578B5940002D587 /* Tile Dijkstra-Prefix.pch */ = {isa = PBXFileReference; path = "Tile Dijkstra-Prefix.pch"; sourceTree = "<group>"; };
+		5B16418D1578B5940002D587 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		5B16418E1578B5940002D587 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		5B1641911578B5940002D587 /* TextParser.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TextParser.xcdatamodel; sourceTree = "<group>"; };
+		5B1641981578B6980002D587 /* GraphData.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = GraphData.txt; sourceTree = "<group>"; };
+		5B867473157F039B008F011A /* Node.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Node.h; sourceTree = "<group>"; };
+		5B867474157F039B008F011A /* Node.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Node.m; sourceTree = "<group>"; };
+		5B867476157F039B008F011A /* NodeManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NodeManager.h; sourceTree = "<group>"; };
+		5B867477157F039B008F011A /* NodeManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NodeManager.m; sourceTree = "<group>"; };
+		5B867479157F039B008F011A /* Edge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Edge.m; sourceTree = "<group>"; };
+		5B867480157F0413008F011A /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		5B867481157F0413008F011A /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		5B867483157F0ACE008F011A /* EdgeManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EdgeManager.h; sourceTree = "<group>"; };
+		5B867484157F0ACE008F011A /* EdgeManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EdgeManager.m; sourceTree = "<group>"; };
+		5B867496157F2472008F011A /* Dijktra.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Dijktra.h; sourceTree = "<group>"; };
+		5B867497157F2473008F011A /* Dijktra.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Dijktra.m; sourceTree = "<group>"; };
+		5B8674A0157F3F49008F011A /* Edge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Edge.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5B1641751578B5940002D587 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5B16417D1578B5940002D587 /* UIKit.framework in Frameworks */,
+				5B16417F1578B5940002D587 /* Foundation.framework in Frameworks */,
+				5B1641811578B5940002D587 /* CoreGraphics.framework in Frameworks */,
+				5B1641831578B5940002D587 /* CoreData.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5B16416D1578B5940002D587 = {
+			isa = PBXGroup;
+			children = (
+				5B1641841578B5940002D587 /* TextParser */,
+				5B16417B1578B5940002D587 /* Frameworks */,
+				5B1641791578B5940002D587 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		5B1641791578B5940002D587 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5B1641781578B5940002D587 /* Tile Dijkstra.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5B16417B1578B5940002D587 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5B16417C1578B5940002D587 /* UIKit.framework */,
+				5B16417E1578B5940002D587 /* Foundation.framework */,
+				5B1641801578B5940002D587 /* CoreGraphics.framework */,
+				5B1641821578B5940002D587 /* CoreData.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5B1641841578B5940002D587 /* TextParser */ = {
+			isa = PBXGroup;
+			children = (
+				5B16418D1578B5940002D587 /* AppDelegate.h */,
+				5B16418E1578B5940002D587 /* AppDelegate.m */,
+				5B867480157F0413008F011A /* ViewController.h */,
+				5B867481157F0413008F011A /* ViewController.m */,
+				5B867471157F039B008F011A /* Module */,
+				5B1641981578B6980002D587 /* GraphData.txt */,
+				5B1641901578B5940002D587 /* TextParser.xcdatamodeld */,
+				5B1641851578B5940002D587 /* Supporting Files */,
+			);
+			path = TextParser;
+			sourceTree = "<group>";
+		};
+		5B1641851578B5940002D587 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				5B1641861578B5940002D587 /* Tile Dijkstra-Info.plist */,
+				5B1641871578B5940002D587 /* InfoPlist.strings */,
+				5B16418A1578B5940002D587 /* main.m */,
+				5B16418C1578B5940002D587 /* Tile Dijkstra-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		5B867471157F039B008F011A /* Module */ = {
+			isa = PBXGroup;
+			children = (
+				5B867472157F039B008F011A /* Dijktra */,
+			);
+			path = Module;
+			sourceTree = "<group>";
+		};
+		5B867472157F039B008F011A /* Dijktra */ = {
+			isa = PBXGroup;
+			children = (
+				5B867496157F2472008F011A /* Dijktra.h */,
+				5B867497157F2473008F011A /* Dijktra.m */,
+				5B867473157F039B008F011A /* Node.h */,
+				5B867474157F039B008F011A /* Node.m */,
+				5B8674A0157F3F49008F011A /* Edge.h */,
+				5B867479157F039B008F011A /* Edge.m */,
+				5B867483157F0ACE008F011A /* EdgeManager.h */,
+				5B867484157F0ACE008F011A /* EdgeManager.m */,
+				5B867476157F039B008F011A /* NodeManager.h */,
+				5B867477157F039B008F011A /* NodeManager.m */,
+			);
+			path = Dijktra;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5B1641771578B5940002D587 /* Tile Dijkstra */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5B1641951578B5940002D587 /* Build configuration list for PBXNativeTarget "Tile Dijkstra" */;
+			buildPhases = (
+				5B1641741578B5940002D587 /* Sources */,
+				5B1641751578B5940002D587 /* Frameworks */,
+				5B1641761578B5940002D587 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Tile Dijkstra";
+			productName = TextParser;
+			productReference = 5B1641781578B5940002D587 /* Tile Dijkstra.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5B16416F1578B5940002D587 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0430;
+			};
+			buildConfigurationList = 5B1641721578B5940002D587 /* Build configuration list for PBXProject "Tile Dijkstra" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 5B16416D1578B5940002D587;
+			productRefGroup = 5B1641791578B5940002D587 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5B1641771578B5940002D587 /* Tile Dijkstra */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5B1641761578B5940002D587 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5B1641891578B5940002D587 /* InfoPlist.strings in Resources */,
+				5B1641991578B6980002D587 /* GraphData.txt in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5B1641741578B5940002D587 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5B16418B1578B5940002D587 /* main.m in Sources */,
+				5B16418F1578B5940002D587 /* AppDelegate.m in Sources */,
+				5B1641921578B5940002D587 /* TextParser.xcdatamodeld in Sources */,
+				5B86747B157F039B008F011A /* Node.m in Sources */,
+				5B86747D157F039B008F011A /* NodeManager.m in Sources */,
+				5B86747E157F039B008F011A /* Edge.m in Sources */,
+				5B867482157F0413008F011A /* ViewController.m in Sources */,
+				5B867485157F0ACF008F011A /* EdgeManager.m in Sources */,
+				5B867499157F256C008F011A /* Dijktra.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		5B1641871578B5940002D587 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5B1641881578B5940002D587 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5B1641931578B5940002D587 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5B1641941578B5940002D587 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5B1641961578B5940002D587 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TextParser/Tile Dijkstra-Prefix.pch";
+				INFOPLIST_FILE = "TextParser/Tile Dijkstra-Info.plist";
+				PRODUCT_NAME = "Tile Dijkstra";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		5B1641971578B5940002D587 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TextParser/Tile Dijkstra-Prefix.pch";
+				INFOPLIST_FILE = "TextParser/Tile Dijkstra-Info.plist";
+				PRODUCT_NAME = "Tile Dijkstra";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5B1641721578B5940002D587 /* Build configuration list for PBXProject "Tile Dijkstra" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5B1641931578B5940002D587 /* Debug */,
+				5B1641941578B5940002D587 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5B1641951578B5940002D587 /* Build configuration list for PBXNativeTarget "Tile Dijkstra" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5B1641961578B5940002D587 /* Debug */,
+				5B1641971578B5940002D587 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		5B1641901578B5940002D587 /* TextParser.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				5B1641911578B5940002D587 /* TextParser.xcdatamodel */,
+			);
+			currentVersion = 5B1641911578B5940002D587 /* TextParser.xcdatamodel */;
+			path = TextParser.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 5B16416F1578B5940002D587 /* Project object */;
+}
